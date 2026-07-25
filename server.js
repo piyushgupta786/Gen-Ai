@@ -1,9 +1,9 @@
 require("dotenv").config();
-const { connect } = require("mongoose");
+const connectDB = require('./src/config/database');
 const app = require('./src/app');
 
 
-connect();
+connectDB();
 
 app.listen(3000 , ()=> {
     console.log("server running on port 3000");
