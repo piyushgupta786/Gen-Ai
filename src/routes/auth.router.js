@@ -5,4 +5,6 @@ const authRouter = express.Router();
 
 authRouter.post('/register' , authcontrollers.UserRegister )
 
-module.exports= authRouter;
+authRouter.post('/login' , )
+
+module.exports= authRouter;     
